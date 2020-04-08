@@ -6,11 +6,11 @@ from time import sleep
 
 class DirectBot:
     def __init__(self):
-        self.bot = TeleBot('815071611:AAH5oTHw-ao0Q35WYHexfwMm-0p0WIvtR_o')
+        self.bot = TeleBot('YOUR TOKEN')
         self.myConnection = mysql.connector.connect(host="127.0.0.1",
                                                     user='root',
                                                     passwd='1111',
-                                                    db='sclick_schema')
+                                                    db='YOURDB')
         self.cursor = self.myConnection.cursor()
 
     def main_function(self):
